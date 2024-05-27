@@ -11,11 +11,11 @@ const NavBar = () => {
         <header>
             <nav className="py-5">
                 <div className="max-w-[1140px] mx-auto px-3">
-                    <div className="flex items-center justify-between ">
-                        <button className={` ${sideBar && "opacity-0"} flex duration-300 gap-1 flex-col`} onClick={() => setsideBar(!sideBar)} >
-                            <span className={` ${sideBar && "translate-x-[1px] translate-y-[8px] rotate-45"} w-5 bg-black h-[2px] block duration-300`}></span>
-                            <span className={` ${sideBar && "opacity-0"} w-5 bg-black h-[2px] block duration-300`}></span>
-                            <span className={` ${sideBar && "translate-x-[2px] translate-y-[-3px] -rotate-45"} w-5 bg-black h-[2px] block duration-300`}></span>
+                    <div className="relative z-50 flex items-center justify-between">
+                        <button className={` ${sideBar ? "":""} flex duration-300 gap-1 flex-col`} onClick={() => setsideBar(!sideBar)} >
+                            <span className={` ${sideBar ? "translate-x-[1px] translate-y-[8px] rotate-45 !bg-white":"bg-black"} w-5  h-[2px] block duration-300`}></span>
+                            <span className={` ${sideBar ? "opacity-0":""} w-5 bg-black h-[2px] block duration-300`}></span>
+                            <span className={` ${sideBar ? "translate-x-[2px] translate-y-[-3px] -rotate-45 !bg-white":"bg-black"} w-5 bg-black h-[2px] block duration-300`}></span>
                         </button>
                         <ul className="flex items-center gap-5">
                             {navData.map((item, index) => (
