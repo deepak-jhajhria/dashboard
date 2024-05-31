@@ -9,11 +9,15 @@ const DashboardHeader = () => {
             </div>
             <div className="flex items-center gap-2 md:gap-4">
                 <div className="relative flex items-center max-lg:hidden md:gap-4 after:absolute after:bg-[#F5F5F5] after:h-[80%] after:w-[1px] after:right-0">
-                    <MessageIcon />
-                    <AlertIcon />
+                    <span className="cursor-pointer ">
+                        <MessageIcon />
+                    </span>
+                    <span className="cursor-pointer ">
+                        <AlertIcon />
+                    </span>
                 </div>
                 <div className="flex items-center gap-2 md:gap-4">
-                    <img className="object-contain w-12 h-12" src={avatar} alt="avatar" />
+                    <img className="object-contain w-12 h-12 cursor-pointer" src={avatar} alt="avatar" />
                     <div className="flex flex-col max-sm:hidden">
                         <p className="text-sm lg:text-base font-bold text-black tracking-[0.3px]">Stéphane</p>
                         <p className="text-[11px] font-normal text-black tracking-[0.3px]">Geschäftsführer</p>

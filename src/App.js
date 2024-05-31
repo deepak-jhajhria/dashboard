@@ -1,6 +1,5 @@
 import './App.css';
 import SideBar from './components/SideBar';
-import Dashboard from './components/Dashboard';
 import { Route, Routes } from 'react-router-dom';
 import FormValidation from './components/FormValidation';
 import Tabs from './components/Tabs';
