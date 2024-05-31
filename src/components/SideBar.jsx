@@ -17,7 +17,10 @@ const SideBar = () => {
                     ))}
                 </div>
             </div>
-            <img className=" max-sm:hidden sm:p-6" src={inputImage} alt="inputImage" />
+            <div className="relative ">
+                <img className="cursor-pointer max-sm:hidden sm:p-6" src={inputImage} alt="inputImage" />
+                <input className="absolute top-0 z-20 w-full h-full opacity-0 cursor-pointer" type="file" name="" id="" />
+            </div>
         </div>
     );
 };
